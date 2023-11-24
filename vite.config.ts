@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/Pop-Chord/",
   plugins: [react()],
+  build: {
+    assetsInlineLimit:0
+  }
 })

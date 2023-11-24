@@ -1,3 +1,5 @@
+import imageUrl from "../../../assets/Rotoscoped Rat.gif"
+
 export function AppFooter()
 {
     return (
@@ -6,23 +8,23 @@ export function AppFooter()
             <img 
                 className="d-inline-block"
                 style={{height:"100%"}}
-                src="/Rotoscoped Rat.gif"
+                src={imageUrl}
             />       
             <img 
                 className="d-inline-block"
                 style={{height:"100%"}}
-                src="/Rotoscoped Rat.gif"
+                src={imageUrl}
             />     
 
             <img 
                 className="d-inline-block float-right"
                 style={{height:"100%"}}
-                src="/Rotoscoped Rat.gif"
+                src={imageUrl}
             />       
             <img 
                 className="d-inline-block float-right"
                 style={{height:"100%"}}
-                src="/Rotoscoped Rat.gif"
+                src={imageUrl}
             />        
         </div>
     );

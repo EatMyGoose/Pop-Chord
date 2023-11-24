@@ -2,6 +2,7 @@ import React from "react"
 import ZFont from "zfont"
 import ZDog from "zdog"
 import { useZdog } from 'react-zdog'
+import fontUrl from "../../assets/ToThePointRegular-n9y4.ttf"
 
 ZFont.init(ZDog)
 
@@ -34,7 +35,7 @@ Object.defineProperty(
 )
 
 const font = new ZDog.Font({
-    src:"./ToThePointRegular-n9y4.ttf"
+    src:fontUrl
 });
 
 /** 
