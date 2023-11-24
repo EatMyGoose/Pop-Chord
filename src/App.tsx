@@ -27,7 +27,7 @@ function PageRouter()
           />
         </Route>
       ),
-      {basename:"/Pop-Chord"}
+      {basename:import.meta.env.BASE_URL}
     )
   )
 }

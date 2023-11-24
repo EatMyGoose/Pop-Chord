@@ -4,7 +4,7 @@ Generate a myriad of Ukulele chord progressions instantly with this tool, with t
 
 ![image](docs/Overview.gif)
 
-Try it out [here](https://eatmygoose.github.io/Pop-Chord/index.html)
+Try it out [here](https://eatmygoose.github.io/Pop-Chord/)
 
 ## Chord Selection Customization
 
