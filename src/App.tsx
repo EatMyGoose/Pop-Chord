@@ -26,7 +26,8 @@ function PageRouter()
             element={<AllChords/>}
           />
         </Route>
-      )
+      ),
+      {basename:"/Pop-Chord"}
     )
   )
 }
