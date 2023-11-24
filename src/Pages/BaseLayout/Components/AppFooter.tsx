@@ -4,18 +4,16 @@ export function AppFooter()
 {
     return (
         <div className="bg-dark" style={{height:"3em", bottom:0}}>
-
             <img 
-                className="d-inline-block"
+                className="d-inline-block float-left"
                 style={{height:"100%"}}
                 src={imageUrl}
             />       
             <img 
-                className="d-inline-block"
+                className="d-inline-block float-left"
                 style={{height:"100%"}}
                 src={imageUrl}
             />     
-
             <img 
                 className="d-inline-block float-right"
                 style={{height:"100%"}}
@@ -25,7 +23,7 @@ export function AppFooter()
                 className="d-inline-block float-right"
                 style={{height:"100%"}}
                 src={imageUrl}
-            />        
+            />
         </div>
     );
 }
