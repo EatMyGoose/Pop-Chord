@@ -1,0 +1,77 @@
+:root {
+    --chord-canvas-base-height: 19em;
+    --chord-canvas-base-width: 12em;
+
+    --chord-canvas-xs-mult: 0.50; /*<=480px*/
+    --chord-canvas-md-mult: 0.75; /*<=960px*/
+}
+
+.chord-canvas{
+    height: var(--chord-canvas-base-height);
+    width: var(--chord-canvas-base-width);
+}
+
+.chord-canvas-header{
+    margin-bottom: 0.2em;
+}
+
+@media only screen and (max-width: 480px){
+    .chord-canvas{
+        height: calc(var(--chord-canvas-base-height) * var(--chord-canvas-xs-mult));
+        width: calc(var(--chord-canvas-base-width) * var(--chord-canvas-xs-mult));
+    }    
+
+    .chord-canvas-header{
+        margin-bottom: 0.1em;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width:960px){
+    .chord-canvas{
+        height: calc(var(--chord-canvas-base-height) * var(--chord-canvas-md-mult));
+        width: calc(var(--chord-canvas-base-width) * var(--chord-canvas-md-mult));
+    }    
+
+    .chord-canvas-header{
+        margin-bottom: 0.1em;
+    }
+}
+
+.chord-renderer-visibility{
+    transition: opacity 0.25s;
+}
+
+.chord-renderer-visibility.hidden{
+    opacity:0;
+}
+
+.chord-renderer-visibility.hidden:hover{
+    opacity:1;
+}
+
+.chord-renderer-stack{
+    position: relative;
+}
+
+.chord-renderer-stack-element{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.chord-renderer-large-text{
+    font-size: 3em;
+}
+
+.chord-renderer-bg{
+    background-color: white;
+}
+
+.chord-renderer-vcenter-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
+}

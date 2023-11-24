@@ -1,0 +1,11 @@
+.app-header-x-padding{
+    padding-left:3em;
+    padding-right:3em;
+}
+
+@media only screen and (max-width:840px){
+    .app-header-x-padding{
+        padding-left:0.5em;
+        padding-right:0.5em;
+    }
+}

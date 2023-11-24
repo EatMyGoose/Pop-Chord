@@ -1,0 +1,51 @@
+html{
+    min-height: 100vh;
+}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+}
+
+#root{
+    min-height: 100vh;
+    height: 100%;
+    position:relative;
+}
+
+.content-body{
+    flex-grow: 1;
+}
+
+.debug-border{
+    /*
+    outline: black;
+    outline-width: 1px;
+    outline-style: solid;
+    */
+}
+
+.content{
+    padding: 1em;
+    max-width: 100em;
+}
+
+.centered{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.centered-text{
+    text-align: center;
+}
+
+.container{
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: center;
+}
+
+.vertical-align-container{
+    display: flex;
+    align-items: center;
+}

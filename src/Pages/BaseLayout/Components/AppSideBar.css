@@ -1,0 +1,34 @@
+.sidebar{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+
+    width:0em;
+    max-width: 100vw;
+    height:100%;
+    z-index: 2;
+    filter: drop-shadow(5px 5px 10px #000000);
+
+    transition: width 0.2s;
+    overflow: auto;
+}
+
+.backdrop{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+
+    transition: background-color 0.1s;
+}
+
+.sidebar.open{
+    width:30em;
+}
+
+.backdrop.open{
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.4);
+}
