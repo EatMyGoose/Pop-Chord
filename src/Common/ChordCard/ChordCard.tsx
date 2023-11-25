@@ -1,7 +1,8 @@
 import React from "react"
 import "./ChordCard.css"
-import { ChordFingering } from "../../types"
+import { ChordFingering, TStringFingering } from "../../types"
 import {ChordRenderer} from "../ChordRenderer/ChordRenderer"
+import { WithinRange } from "../../util"
 
 export interface IChordCard
 {
@@ -34,12 +35,19 @@ export function ChordCard(props: IChordCard)
     const leftDisabled: boolean = (index - 1) < 0;
     const rightDisabled: boolean = (index + 1) >= nFingerings;
 
+    if(!WithinRange(index, props.fingeringList))
+    {
+        setIndex(props.fingeringList.length - 1);
+    }
+
+    const fingering: TStringFingering[] =props.fingeringList.at(index)?.fingering || [];
+
     return (
         <div className="card debug-border chord-card-size">
             <div>
                 <ChordRenderer 
                     displayedName={props.displayedName}
-                    fingerings={props.fingeringList[index].fingering}
+                    fingerings={fingering}
                     showChord={props.showChord}
                     draggable={props.fretboardRotatable}
                     hideDiagram={props.hideDiagram}

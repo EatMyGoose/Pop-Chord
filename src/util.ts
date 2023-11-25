@@ -24,3 +24,8 @@ export function linspace(
 
     return splits;
 }
+
+export function WithinRange<T>(idx: number, arr: T[]) : boolean
+{
+    return idx >= 0 && idx < arr.length;
+}
